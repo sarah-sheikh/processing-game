@@ -1,6 +1,6 @@
 
 float x = 300;   // x location of square
-float y = 360;     // y location of square
+float y = 150;     // y location of square
 
 // The statements in the setup() function 
 // execute once when the program begins
@@ -18,19 +18,24 @@ void draw() {
   rectMode(CENTER);
   rect(x,y,10,10);
 
+//move the square down until the bottom unless mouse is clicked
+if (y <= 360) {
+  y = y + 4;
 // move the square up if i'm pressing the mouse
 //stop going up if square reaches the top
+
 if (mousePressed) {
   if(y > 0) {  
-    y = y - 4; 
+    y = y - 8; 
    }
 }  
 
-  else if(y != height){
+  /*else if(y != height){
    // go back down when i let go of the mouse 
    
    for (int i = 0; i < 360; i++) {
      y = y + 1;
-  }
+     delay(1);
+  }*/
  }
 }
