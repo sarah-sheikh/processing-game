@@ -19,16 +19,26 @@ void draw() {
   rect(x,y,10,10);
 
 // move the square up if i'm pressing the mouse
-//stop going up if square reaches the top
 if (mousePressed) {
-    y = y - 4; 
+   // as long as the square is below the top keep moving up
+   if(y >= 0) { 
+      y = y - 4; 
    }
    
+   // if the square is at the top and I'm holding the mouse stay there.
+   // if I let go of the mouse then I jump down to this line ***
+   else {}
+   }
+   
+   // ***
    // make the sqaure fall
+else if(y != height) {
+  y = y + 4; 
+  }
 
-else if(y != height){
- y = y + 4; 
-}
+// make the square stay at the top
+
+
 }
 
 
