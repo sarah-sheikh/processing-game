@@ -1,4 +1,3 @@
-
 float x = 300;   // x location of square
 float y = 360;     // y location of square
 
@@ -21,17 +20,17 @@ void draw() {
 // move the square up if i'm pressing the mouse
 //stop going up if square reaches the top
 if (mousePressed) {
+  if(y > 0) {  
     y = y - 4; 
    }
+}  
+
+  else if(y != height){
+   // go back down when i let go of the mouse 
    
-   // make the sqaure fall
-
-else if(y != height){
- y = y + 4; 
+   for (int i = 0; i < 360; i++) {
+     y = y + 1;
+  }
+ }
 }
-}
-
-
-
-
 
