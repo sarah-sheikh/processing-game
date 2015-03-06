@@ -21,22 +21,15 @@ void draw() {
 
 //move the square down until the bottom unless mouse is clicked
 if (y <= 360) {        //if the y value is 360, lower on the screen, 
-  y = y + 4;           //then add 4 so the square goes up 4
+  y = y + 4;           //then add 4 so the square goes down 4
+
 // move the square up if i'm pressing the mouse
 //stop going up if square reaches the top
 
-if (mousePressed) {
+if (mousePressed) {    //if mouse is clicked
   if(y > 0) {  
     y = y - 8; 
    }
-}  
-
-  /*else if(y != height){
-   // go back down when i let go of the mouse 
-   
-   for (int i = 0; i < 360; i++) {
-     y = y + 1;
-     delay(1);
-  }*/
+  }   
  }
 }
