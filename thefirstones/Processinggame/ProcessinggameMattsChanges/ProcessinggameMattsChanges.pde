@@ -35,10 +35,6 @@ if (mousePressed) {
 else if(y != height) {
   y = y + 4; 
   }
-
-// make the square stay at the top
-
-
 }
 
 
