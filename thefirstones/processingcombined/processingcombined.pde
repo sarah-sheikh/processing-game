@@ -12,7 +12,7 @@ float y = 150;     // y location of square
 void setup() {
   size(640, 360);      // Declares the size of the board
   stroke(255);        // Set line drawing color to white
-  frameRate(10);      // declares the speed of the board
+  frameRate(30);      // declares the speed of the board
 }
 
 void draw() {
@@ -57,7 +57,7 @@ void draw() {
     g = 0;
   }
   //move the square down until the bottom unless mouse is clicked
-if (y <= 360) {        //if the y value is 360, lower on the screen, 
+if (y <= height) {        //if the y value is 360, lower on the screen, 
   y = y + 4;           //then add 4 so the square goes down 4
 
 // move the square up if i'm pressing the mouse
