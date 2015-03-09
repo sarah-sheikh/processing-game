@@ -25,5 +25,22 @@ void draw() {
   if(b > width) {
     b = 0;
   }
+  if(c > width) {
+    c = 0;
+  }
+//create different lenght of lines each time
+randomSeed(0);
+for (int i=0; i < 100; i++) {
+  float r = random(0, 255);
+  stroke(225);
+  line(a, 0, a, 100);
+}
+  randomSeed (0) ;            
+for (int i=0; i < 100; i++) { 
+  float r = random(0, 255) ;
+  line(b, 0, b, 100);
+  stroke(225);
+  line(b,0,b,100);
+ }
 }
 

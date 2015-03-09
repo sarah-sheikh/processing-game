@@ -1,4 +1,4 @@
- 
+PImage img; 
 int a = 0;      // Create a variable "a" of the datatype "int"
 float b = 50;      // Create a variable "b" of the datatype "float"
 float c = 100;     // create another variable "c" of the datatype "float"
@@ -10,16 +10,18 @@ float x = 300;     // x location of square
 float y = 150;     // y location of square
 
 void setup() {
+  img = loadImage ("Logo2.png");
+  size(2,2);
   size(640, 360);      // Declares the size of the board
   stroke(255);        // Set line drawing color to white
   frameRate(10);      // declares the speed of the board
 }
 
 void draw() {
-  background(2,133,165);    // Clear the screen with a black background
+  background(82,34,167);    // Clear the screen with a purple background
   rectMode(CENTER); // square is in the center of the x axis
-  rect(x,y,10,10);  // draws the square at the x,y cordinants declared
-                    // at the top and its size is 10x10
+  image(img, x, y);  // draws the RAlogo at the x,y cordinants declared
+                     // at the top and its size is 10x10
   a = a + 5;            
   b = b + 5;       //making all variables increase acrossed
   c = c + 5;       // background in increments of 5
@@ -34,7 +36,7 @@ void draw() {
   line(e, 0, e, height/3);
   line(f, height/2, f, height/4);
   line(g, 300, g, height/2);
-  
+ 
   if(a > width) {          //if the lines reach the edge of the screen
     a = 0;                 // then they will restart at "0" or the
   }                        // the left side of the screen
