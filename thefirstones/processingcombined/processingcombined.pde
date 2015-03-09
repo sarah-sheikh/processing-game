@@ -12,7 +12,7 @@ float y = 150;     // y location of square
 void setup() {
   size(640, 360);      // Declares the size of the board
   stroke(255);        // Set line drawing color to white
-  frameRate(30);      // declares the speed of the board
+  frameRate(10);      // declares the speed of the board
 }
 
 void draw() {
